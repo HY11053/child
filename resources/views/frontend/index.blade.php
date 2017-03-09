@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" data-style="fullscreen" data-menu="centeralign">
+<html lang="ko-KR" data-style="fullscreen" data-menu="centeralign">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -49,7 +49,6 @@
         SnazzyDataForSnazzyMaps={"id":151,"name":"Ultra Light with Labels","description":"Light Rust","url":"https:\/\/snazzymaps.com\/style\/151\/ultra-light-with-labels","imageUrl":"https:\/\/az769952.vo.msecnd.net\/assets\/151-ultra-light-with-labels.png?v=20151206051812","json":"[{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#e9e9e9\"},{\"lightness\":17}]},{\"featureType\":\"landscape\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"},{\"lightness\":20}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":17}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":29},{\"weight\":0.2}]},{\"featureType\":\"road.arterial\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":18}]},{\"featureType\":\"road.local\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"},{\"lightness\":16}]},{\"featureType\":\"poi\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"},{\"lightness\":21}]},{\"featureType\":\"poi.park\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#dedede\"},{\"lightness\":21}]},{\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"visibility\":\"on\"},{\"color\":\"#ffffff\"},{\"lightness\":16}]},{\"elementType\":\"labels.text.fill\",\"stylers\":[{\"saturation\":36},{\"color\":\"#333333\"},{\"lightness\":40}]},{\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"transit\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f2f2f2\"},{\"lightness\":19}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#fefefe\"},{\"lightness\":20}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#fefefe\"},{\"lightness\":17},{\"weight\":1.2}]}]","views":73877,"favorites":202,"createdBy":{"name":"hawasan","url":"http:\/\/www.haveasign.pl"},"createdOn":"2014-11-04T03:01:33.197"};
         /* ]]> */
     </script>
-    <script type='text/javascript' src='http://nearanddear.kr/wp-content/plugins/snazzy-maps/snazzymaps.js'></script>
     <meta name="generator" content="Powered by Slider Revolution 5.1.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
 
 </head>
@@ -249,5 +248,6 @@
 <script type='text/javascript' src='/children/js/supersized.shutter.min.js'></script>
 <script type='text/javascript' src='/children/js/jquery.touchwipe.1.1.1.js'></script>
 <script type='text/javascript' src='/children/js/script-supersized-gallery.js?gallery_id=6274&#038;cover=1'></script>
+
 </body>
 </html>
