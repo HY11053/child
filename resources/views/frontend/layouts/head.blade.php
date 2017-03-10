@@ -5,7 +5,7 @@
         <div id="logo_wrapper">
             <div class="social_wrapper">
                 <ul>
-                    <li class="instagram"><a target="_blank" title="Instagram" href="http://instagram.com/nearanddear_studio"><i class="fa fa-instagram"></i></a></li>
+                    <li class="instagram"><a target="_blank" title="Instagram" href="#"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
             <!-- Begin right corner buttons -->
@@ -23,12 +23,12 @@
 
             <div id="logo_normal" class="logo_container">
                 <div class="logo_align">
-                    <a id="custom_logo" class="logo_wrapper hidden" href="http://nearanddear.kr/"><img src="/children/images/logo.png" alt="" width="192" height="16"/></a>
+                    <a id="custom_logo" class="logo_wrapper hidden" href="/"><img src="/children/images/logo.png" alt="" width="192" height="16"/></a>
                 </div>
             </div>
 
             <div id="logo_transparent" class="logo_container">
-                <div class="logo_align"><a id="custom_logo_transparent" class="logo_wrapper default" href="http://nearanddear.kr/"><img src="http://nearanddear.kr/wp-content/uploads/2015/12/logo.png" alt="" width="192" height="16"/></a>
+                <div class="logo_align"><a id="custom_logo_transparent" class="logo_wrapper default" href="/"><img src="/children/images/logo.png" alt="" width="192" height="16"/></a>
                 </div>
             </div>
             <!-- End logo -->

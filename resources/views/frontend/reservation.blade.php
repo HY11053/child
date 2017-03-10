@@ -45,14 +45,15 @@
                                 <!-- Fast Secure Contact Form plugin 4.0.38 - begin - FastSecureContactForm.com -->
                                 <div style="clear:both;"></div>
                                 <div id="FSContact2" style="width:99%; max-width:400px;">
-                                    <form action="" id="fscf_form2" method="post">
+                                    <form action="/admin/phone/create" method="POST" >
+                                        {{csrf_field()}}
                                         <div id="fscf_div_clear2_0" style="clear:both;">
                                             <div id="fscf_div_field2_0" style="clear:left; float:left; width:99%; max-width:550px; margin-right:10px;">
                                                 <div style="text-align:left; padding-top:5px;">
                                                     <label style="text-align:left;" for="fscf_name2">您的称呼</label>
                                                 </div>
                                                 <div style="text-align:left;">
-                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_name2" name="full_name" value=""  />
+                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_name2" name="name" value=""  />
                                                 </div>
                                             </div>
                                         </div>
@@ -63,7 +64,7 @@
                                                     <label style="text-align:left;" for="fscf_field2_2">宝宝的年龄</label>
                                                 </div>
                                                 <div style="text-align:left;">
-                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_field2_2" name="subject" value=""  />
+                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_field2_2" name="age" value=""  />
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +75,7 @@
                                                     <label style="text-align:left;" for="fscf_field2_5">联系电话</label>
                                                 </div>
                                                 <div style="text-align:left;">
-                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_field2_5" name="na01" value=""  />
+                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_field2_5" name="phoneno" value=""  />
                                                 </div>
                                             </div>
                                         </div>
@@ -85,7 +86,7 @@
                                                     <label style="text-align:left;" for="fscf_field2_6">微信号码</label>
                                                 </div>
                                                 <div style="text-align:left;">
-                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_field2_6" name="na02" value=""  />
+                                                    <input style="text-align:left; margin:0; width:100%; max-width:500px;height:25px;" type="text" id="fscf_field2_6" name="wechat" value=""  />
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +97,7 @@
                                                     <label style="text-align:left;" for="fscf_field2_3">您的其他要求</label>
                                                 </div>
                                                 <div style="text-align:left;">
-                                                    <textarea style="text-align:left; margin:0; width:100%; max-width:500px; height:150px;" id="fscf_field2_3" name="message" cols="30" rows="10" ></textarea>
+                                                    <textarea style="text-align:left; margin:0; width:100%; max-width:500px; height:150px;" id="fscf_field2_3" name="note" cols="30" rows="10" ></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -106,10 +107,17 @@
                                         </div>
 
                                         <div id="fscf_submit_div2" style="text-align:left; clear:both; padding-top:15px;">
-                                            <input type="submit" id="fscf_submit2" style="cursor:pointer; margin:0;width:170px;" value="send"  onclick="this.disabled=true; this.value='Submitting...'; this.form.submit();" />
+                                            <input type="submit" style="cursor:pointer; margin:0;width:170px;" value="Send"  />
                                         </div>
 
                                     </form>
+                                    @if(count($errors) > 0)
+                                        <ul class="alert alert-danger">
+                                            @foreach($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    @endif
                                 </div>
                                 <div style="clear:both;"></div>
 

@@ -37,6 +37,7 @@ class PhoneManageController extends Controller
      */
     public function CreatePhoneManage (PhoneManageRequest $request)
     {
+        //dd($request->all());
         $request['ip']=$request->getClientIp();
         Phonemanage::create($request->all());
         event(new PhoneEvent(Phonemanage::latest() ->first()));

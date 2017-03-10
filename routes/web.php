@@ -18,6 +18,7 @@ Route::get('priching', 'Frontend\IndexController@Priching');
 Route::get('ask', 'Frontend\IndexController@Ask');
 Route::get('reservation', 'Frontend\IndexController@Reservation');
 Route::get('contactus', 'Frontend\IndexController@Contactus');
+Route::get('portfolio/article/{id}', 'Frontend\IndexController@PortfolioArticle');
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 

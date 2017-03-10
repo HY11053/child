@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\AdminModel\Addonarticle;
+use App\AdminModel\Archive;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -34,5 +36,11 @@ class IndexController extends Controller
     public function Contactus()
     {
         return view('frontend.contactus');
+    }
+    public function PortfolioArticle(Request $request,$id)
+    {
+        $thisinfos=Archive::find($id);
+        $thispicinfos=array_filter(explode(',',Addonarticle::where('id',$id)->value('imagepics')));
+        return view('frontend.article_article',compact('thisinfos','thispicinfos'));
     }
 }

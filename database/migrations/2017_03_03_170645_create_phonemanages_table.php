@@ -17,7 +17,9 @@ class CreatePhonemanagesTable extends Migration
             $table->increments('id');
             $table->string('phoneno')->unique();
             $table->string('name');
-            $table->string('gender')->default('');
+            $table->string('gender')->default('未知');
+            $table->string('age')->default('');
+            $table->string('wechat')->default('');
             $table->string('address')->default('');
             $table->ipAddress('ip');
             $table->string('note')->default('');
