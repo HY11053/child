@@ -190,7 +190,8 @@ hr.title_break
 hr.title_break.left
 {
 	display: inline-block;
-	margin: 20px 0 20px 0;
+	margin: 0px 0 0px 0;
+	border-color: #ffffff;
 }
 
 #page_caption hr.title_break

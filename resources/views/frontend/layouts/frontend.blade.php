@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-cn" data-style="fullscreen" data-menu="centeralign">
+<html lang="ko-KR"  data-menu="centeralign">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>@yield('title')</title>
+    <title>near)aboutme | nearanddear_studio</title>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/nearanddear.kr\/wp-includes\/js\/wp-emoji-release.min.js"}};
+        !function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -44,29 +48,7 @@
     <script type='text/javascript' src='/children/js/jquery.themepunch.revolution.min.js'></script>
     @yield('head')
 </head>
-
-<body class="@yield('class')">
-<!-- Begin mobile menu -->
-<a id="close_mobile_menu" href="javascript:;"></a>
-
-@include('frontend.wrapper')
-<!-- Begin template wrapper -->
-<div id="wrapper" class="hasbg">
-
-@include('frontend.layouts.head')
-    @yield('nextslide')
-@yield('ppb_wrapper')
-    <div id="controls-wrapper" class="load-item"><div id="controls"><!--Slide captions displayed here--> <div id="slidecaption"></div></div></div>
-
-@include('frontend.layouts.footer')
-
-</div>
-
-
-<div id="overlay_background">
-    @yield('fullscreen')
-</div>
-
+@yield('body')
 <script type='text/javascript' src='/children/js/jquery.requestAnimationFrame.js'></script>
 <script type='text/javascript' src='/children/js/jquery.mousewheel.min.js'></script>
 <script type='text/javascript' src='/children/js/ilightbox.packed.js'></script>

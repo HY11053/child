@@ -1,52 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko-KR"  data-menu="centeralign">
-<head>
-    <title>portfolio | nearanddear_studio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="format-detection" content="telephone=no">
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-    <link rel='stylesheet' id='rs-plugin-settings-css'  href='/children/css/settings.css' type='text/css' media='all' />
-    <style id='rs-plugin-settings-inline-css' type='text/css'>
-        #rs-demo-id {}
-    </style>
-    <link rel='stylesheet' id='photography-reset-css-css'  href='/children/css/reset.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-wordpress-css-css'  href='/children/css/wordpress.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-animation-css-css'  href='/children/css/animation.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-ilightbox-css'  href='/children/css/ilightbox.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-jquery-ui-css-css'  href='/children/css/custom.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-mediaelement-css'  href='/children/css/mediaelementplayer.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-flexslider-css'  href='/children/css/flexslider.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-tooltipster-css'  href='/children/css/tooltipster.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-odometer-theme-css'  href='/children/css/odometer-theme-minimal.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-hw-parallax.css-css'  href='/children/css/hw-parallax.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-screen-css'  href='/children/css/screen.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-fonts-css'  href='/children/css/fronts.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-fontawesome-css'  href='/children/css/font-awesome.min.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-custom-css-css'  href='/children/css/custom-php.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='kirki-styles-css'  href='/children/css/kirki-styles.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='photography-responsive-css'  href='/children/css/grid.css' type='text/css' media='all' />
-    <script type='text/javascript' src='/children/js/jquery.js'></script>
-    <script type='text/javascript' src='/children/js/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='/children/js/jquery.themepunch.tools.min.js'></script>
-    <script type='text/javascript' src='/children/js/jquery.themepunch.revolution.min.js'></script>
-</head>
-
+@extends('frontend.layouts.frontend')
+@section('body')
 <body class="page page-id-7017 page-template page-template-portfolio-3-contained page-template-portfolio-3-contained-php">
-
 
 <!-- Begin mobile menu -->
 <a id="close_mobile_menu" href="javascript:;"></a>
@@ -58,18 +12,18 @@
 
 @include('frontend.layouts.head')
     <div id="page_caption" class="  single_gallery">
-
         <div class="page_title_wrapper">
             <div class="page_title_inner">
-                <h1 >portfolio</h1>
+                <h1 >作品欣赏</h1>
                 <hr class="title_break">
                 <div class="page_tagline">
-                    A dynamic feeling than static feeling<br />
-                    Everyone in the world looks different looks and different impression.
+                    SAMPLE SHOW
+                    <br/>
+                    Hiding your temperament, now you walk through the road<br />
+                    People who read the book and love once.
                     <br /><br />
-                    PHOTOGRAPHER      KANG CHANG JU
+                    Colorful Baby Studio
                     <br /><br />
-                    <font color="#666666">(Compatible Browsers IE9, IE10, IE11, Firefox, Safari, Opera, Chrome) </font>
                 </div>
             </div>
         </div>
@@ -83,7 +37,6 @@
         <div class="inner">
 
             <div class="inner_wrapper nopadding">
-
 
                 <div id="page_main_content" class="sidebar_content full_width nopadding fixed_column">
 
@@ -396,17 +349,4 @@
 </div>
 <div id="overlay_background">
 </div>
-
-<script type='text/javascript' src='/children/js/jquery.requestAnimationFrame.js'></script>
-<script type='text/javascript' src='/children/js/jquery.mousewheel.min.js'></script>
-<script type='text/javascript' src='/children/js/ilightbox.packed.js'></script>
-<script type='text/javascript' src='/children/js/jquery.easing.js'></script>
-<script type='text/javascript' src='/children/js/waypoints.min.js'></script>
-<script type='text/javascript' src='/children/js/jquery.isotope.js'></script>
-<script type='text/javascript' src='/children/js/jquery.masory.js'></script>
-<script type='text/javascript' src='/children/js/jquery.tooltipster.min.js'></script>
-<script type='text/javascript' src='/children/js/hw-parallax.js'></script>
-<script type='text/javascript' src='/children/js/custom_plugins.js'></script>
-<script type='text/javascript' src='/children/js/custom.js'></script>
-</body>
-</html>
+@stop
