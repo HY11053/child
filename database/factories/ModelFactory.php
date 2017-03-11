@@ -26,7 +26,7 @@ $factory->define(App\AdminModel\Admin::class, function (Faker\Generator $faker) 
 
     return [
         'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
+        'email' => 'childrenadmin@hotmail.com',
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
     ];
