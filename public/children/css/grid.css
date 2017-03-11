@@ -1362,3 +1362,20 @@
   body { -webkit-text-size-adjust: none; }
   .tg_stats { margin-left: 0; } 
 }
+#copyright{width: 375px; margin: 0 auto; float:none; font-size: 14px; }
+#copyright .foot_title{font-weight: 600; text-align: center; }
+#copyright p{border-bottom: dashed 1px; line-height: 25px; }
+#copyright .foot_image{ float: left; text-align: center; margin-left: 35px; line-height: 10px; margin-bottom: 10px;}
+#copyright .foot_image img{padding-top: 15px; padding-bottom: 15px; }
+#copyright a{display: inline-block; padding: 5px; }
+
+@media only screen and (min-width: 360px) and (max-width: 420px) {
+	#copyright .foot_image{ float: left; text-align: center; margin-left: 15px; line-height: 10px; margin-bottom: 10px;}
+	#copyright .foot_image img{width:80%; height:auto;padding-top: 15px; padding-bottom: 15px; }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 359px) {
+	#copyright{width: 100%; margin: 0 auto; float:none; font-size: 12px; }
+	#copyright .foot_image{width:45%; float: left; text-align: center; margin-left: 5px; line-height: 10px; margin-bottom: 10px;}
+	#copyright .foot_image img{width:60%; height:auto;padding-top: 15px; padding-bottom: 15px; }
+}

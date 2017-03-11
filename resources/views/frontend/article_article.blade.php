@@ -149,20 +149,7 @@
         <a href="http://nearanddear.kr/?page_id=7017"><i class="fa fa-th-large marginright middle"></i><h6>View All Portfolios</h6></a>
     </div>
     <br class="clear"/><br/><hr class="small"/>
-
-
-
-
-
-
-    <div class="footer_bar   noborder">
-
-
-        <div class="footer_bar_wrapper ">
-            <div id="copyright">nearanddear © 2015 | All Rights Reserved | TEL.02-499-5010 </div><br class="clear"/>
-            <a id="toTop"><i class="fa fa-angle-up"></i></a>
-        </div>
-    </div>
+    @include('frontend.layouts.footer')
 
 </div>
 

@@ -337,14 +337,7 @@
         </div>
         <br class="clear"/><br/>
     </div>
-    <div class="footer_bar   noborder">
-
-
-        <div class="footer_bar_wrapper ">
-            <div id="copyright">nearanddear © 2015 | All Rights Reserved | TEL.02-499-5010 </div><br class="clear"/>
-            <a id="toTop"><i class="fa fa-angle-up"></i></a>
-        </div>
-    </div>
+    @include('frontend.layouts.footer')
 
 </div>
 <div id="overlay_background">
