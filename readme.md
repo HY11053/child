@@ -10,7 +10,7 @@
 
 ## 安装方式
 
-$git clone https://github.com/HY11053/laravelcms.git
+$git clone https://github.com/HY11053/child.git
 
 ## 数据生成
 composer update 安装vendor目录和所需的组件包
