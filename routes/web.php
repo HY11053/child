@@ -53,7 +53,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     
     Route::put('article/edit/{id}','ArticleController@PostEdit')->name('article_edit');
     Route::get('flashpics','FlashImageController@Create');
-    Route::post('flashpics','FlashImageController@PoseCreate');
+    Route::post('flashpics','FlashImageController@PoseCreate')->name('flashpics');
     Route::get('flink','FlinkController@Index');
     Route::get('flink/create','FlinkController@CreateFlink');
     Route::get('flink/edit/{id}','FlinkController@EditFlink');

@@ -11,7 +11,7 @@
 @section('content')
         <!-- row -->
 <div class="row">
-    {{Form::open(array('route' => 'article_create','files' => true,))}}
+    {{Form::open(array('route' => 'flashpics','files' => true,))}}
     <div class="col-md-12">
         <!-- The time line -->
         <ul class="timeline">
@@ -116,6 +116,12 @@
 <!-- /Custom Notification -->
 <script src="/js/fileinput.min.js"></script>
         <script>
+            $(document).ready(function() {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                })});
             $("#input-image-1").fileinput({
                 uploadUrl: "/admin/upload/images",
                 uploadAsync: true,

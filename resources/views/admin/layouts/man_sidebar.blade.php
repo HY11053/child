@@ -82,6 +82,7 @@
                     <li @if(Request::getRequestUri()=='/admin/makesitemap')class="active"@endif><a href="/admin/makesitemap"><i class="fa fa-circle-o"></i>XML地图生成</a></li>
                     <li @if(Request::getRequestUri()=='/admin/phone')class="active"@endif><a href="/admin/phone"><i class="fa fa-circle-o"></i> 电话提交管理</a></li>
                     <li @if(Request::getRequestUri()=='/admin/makemsitemap')class="active"@endif><a href="/admin/makemsitemap"><i class="fa fa-circle-o"></i> 移动端地图生成</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/flashpics')class="active"@endif><a href="/admin/flashpics"><i class="fa fa-circle-o"></i> 首页幻灯图片上传</a></li>
                 </ul>
             </li>
             <li class="treeview">
