@@ -25,8 +25,8 @@ class CreateArticleRequest extends FormRequest
     {
         return [
            'title'=>'required|max:50|min:5',
-            'shorttitle'=>'required|max:20',
-            'tags'=>'required|max:20',
+            'shorttitle'=>'required|max:50',
+            'tags'=>'required|max:100',
             'ismake'=>'required|numeric',
             'published_at'=>'date',
             'mid'=>'numeric',

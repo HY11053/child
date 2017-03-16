@@ -9,5 +9,5 @@ class Phonemanage extends Model
 {
     use Notifiable;
     //
-    protected $fillable=['phoneno','name','gender','address','ip','note'];
+    protected $fillable=['phoneno','name','gender','address','ip','note','age','wechat'];
 }

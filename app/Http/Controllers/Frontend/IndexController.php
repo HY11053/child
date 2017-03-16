@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\AdminModel\Addonarticle;
 use App\AdminModel\Archive;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +20,8 @@ class IndexController extends Controller
     }
     public function Portfolio()
     {
-        return view('frontend.profile');
+        $thisPortfolioLists=Archive::where('ismake',1)->where('typeid',1)->where('published_at','<=',Carbon::now())->latest()->paginate(15);
+        return view('frontend.profile',compact('thisPortfolioLists'));
     }
     public function Priching()
     {
@@ -41,6 +43,7 @@ class IndexController extends Controller
     {
         $thisinfos=Archive::find($id);
         $thispicinfos=array_filter(explode(',',Addonarticle::where('id',$id)->value('imagepics')));
-        return view('frontend.article_article',compact('thisinfos','thispicinfos'));
+        $thisClists=Archive::where('ismake',1)->where('typeid',1)->where('published_at','<=',Carbon::now())->latest()->take(5)->get();
+        return view('frontend.article_article',compact('thisinfos','thispicinfos','thisClists'));
     }
 }

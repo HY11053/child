@@ -35,6 +35,8 @@ class PhoneEventListener
             'name'=>$event->phonemanage->name,
             'phoneno'=>$event->phonemanage->phoneno,
             'address'=>$event->phonemanage->address,
+            'wechat'=>$event->phonemanage->wechat,
+            'age'=>$event->phonemanage->age,
             'ip'=>$event->phonemanage->ip,
             'note'=>$event->phonemanage->note,
             'created_at'=>$event->phonemanage->created_at

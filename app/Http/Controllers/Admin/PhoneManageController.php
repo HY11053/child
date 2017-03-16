@@ -12,10 +12,7 @@ use App\Http\Controllers\Controller;
 
 class PhoneManageController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth.admin:admin');
-    }
+
     /**
      * 电话提交管理列表
      * @param
@@ -37,7 +34,7 @@ class PhoneManageController extends Controller
      */
     public function CreatePhoneManage (PhoneManageRequest $request)
     {
-        //dd($request->all());
+        dd($request->all());
         $request['ip']=$request->getClientIp();
         Phonemanage::create($request->all());
         event(new PhoneEvent(Phonemanage::latest() ->first()));

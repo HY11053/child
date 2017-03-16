@@ -97,15 +97,15 @@
                             </div>
 
                             <div class="form-group col-md-12">
-                                {{Form::label('tags', 'tag标签', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('tags', '拍摄标志', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-4 col-sm-9 col-xs-12">
-                                    {{Form::text('tags', null, array('class' => 'form-control','id'=>'tags','placeholder'=>'文档tag标签'))}}
+                                    {{Form::text('tags', null, array('class' => 'form-control','id'=>'tags','placeholder'=>'拍摄标志'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-12">
                                 {{Form::label('keywords', '关键字', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-4 col-sm-9 col-xs-12">
-                                    {{Form::text('keywords',null, array('class' => 'form-control','id'=>'keywords','placeholder'=>'文档关键词'))}}
+                                    {{Form::text('keywords',null, array('class' => 'form-control','id'=>'keywords','placeholder'=>'关键字'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-12">
@@ -166,112 +166,6 @@
                             </div>
                             <div style="clear: both"></div>
 
-                        </div>
-                    </div>
-                </li>
-                <!-- END timeline item -->
-                <!-- timeline item -->
-                <li>
-                    <i class="fa fa-user bg-yellow"></i>
-
-                    <div class="timeline-item">
-                        <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
-
-                        <h3 class="timeline-header"><a href="#">产品信息</a> 产品信息描述</h3>
-
-                        <div class="timeline-body">
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandname', '品牌名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandname',null, array('class' => 'form-control col-md-10','id'=>'brandname','placeholder'=>'品牌名称'))}}
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandtime', '成立时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandtime', null, array('class' => 'form-control col-md-10','id'=>'brandtime','placeholder'=>'1970-1-1'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandorigin', '品牌发源地', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandorigin', null, array('class' => 'form-control col-md-10','id'=>'brandorigin','placeholder'=>'品牌发源地'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandnum', '门店总数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandnum', null, array('class' => 'form-control col-md-10','id'=>'brandnum','placeholder'=>'门店总数'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandpay', '加盟费用', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandpay', null, array('class' => 'form-control col-md-10','id'=>'brandpay','placeholder'=>'加盟费用'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandarea', '加盟区域', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandarea', null, array('class' => 'form-control col-md-10','id'=>'brandarea','placeholder'=>'加盟区域'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandmap', '经营范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandmap', null, array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'经营范围'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandperson', '加盟人群', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandperson', null, array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'加盟人群'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandattch', '加盟意向人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandattch', null, array('class' => 'form-control col-md-10','id'=>'brandattch','placeholder'=>'加盟意向人数'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandapply', '申请加盟人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandapply', null, array('class' => 'form-control col-md-10','id'=>'brandapply','placeholder'=>'申请加盟人数'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandchat', '加盟意向人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandchat', null, array('class' => 'form-control col-md-10','id'=>'brandchat','placeholder'=>'加盟意向人数'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandgroup', '公司名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandgroup', null, array('class' => 'form-control col-md-10','id'=>'brandgroup','placeholder'=>'公司名称'))}}
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandaddr', '公司地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandaddr', null, array('class' => 'form-control col-md-10','id'=>'brandaddr','placeholder'=>'公司地址'))}}
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    {{Form::label('brandduty', '是否区域授权', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                    <div class="col-md-8 col-sm-9 col-xs-12">
-                                        {{Form::text('brandduty', null, array('class' => 'form-control col-md-10','id'=>'brandduty','placeholder'=>'是否区域授权'))}}
-                                        {{Form::hidden('mid', '0', array('class' => 'form-control col-md-10','id'=>'mid'))}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-footer">
-                            <a class="btn btn-warning btn-flat btn-xs">View comment</a>
                         </div>
                     </div>
                 </li>
@@ -489,7 +383,7 @@
         }).on('filedeleted', function(event, key) {
             console.log('Key = ' + key);
             arrs=key.split(',')
-            $("#imagepics").val($("#imagepics").val().replace(','+arrs[1],''));
+            $("#imagepics").val($("#imagepics").val().replace(arrs[1]+',',''));
         });
     </script>
 @stop
