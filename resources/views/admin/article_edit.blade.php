@@ -268,9 +268,6 @@
 
 
     <script>
-
-
-
         $(document).ready(function() {
             $.ajaxSetup({
                 headers: {
